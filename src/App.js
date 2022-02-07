@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
 import Nav from "./components/Nav";
-import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
