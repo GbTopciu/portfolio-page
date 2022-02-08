@@ -1,16 +1,25 @@
 import React from "react";
 
-const Card = ({name, description, cover, title, link}) => {
+const Card = ({ author, description, cover, title, link, date }) => {
   return (
-    <div className="max-w-3xl mx-auto">
-      <div className ="bg-white lg:flex lg:shadow-lg lg:rounded-lg">
-        <div className="p-12 text-center">
-      <img src={cover} alt={title}/>
-      <h2 className="text-2xl text-gray-800 font-bold md:text-3xl">{name}</h2>
-      <p className="mt-4 text-gray-600">{description}</p>
-      <a href={link} className="bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded hover:bg-gray-800 hover:shadow-lg">Start Now</a>
+    <div className="py-25 flex items-center justify-center mt-10">
+      <div className="bg-white rounded-lg shadow-2xl w-3/4">
+        <img
+          src={cover}
+          alt={title}
+          className="rounded-t-lg h-60 w-full object-cover"
+        ></img>
+        <div className="p-8">
+          <h2 className="text-xl font-extrabold mb-5">{title}</h2>
+          <p>{description}</p>
+          <button className="bg-blue-400 text-blue-50 rounded-lg py-2 px-4 mt-5">
+            Get Started
+          </button>
+        </div>
+        <footer className="bg-gray-100 rounded-b-lg text-right py-3 px-8 text-xs text-gray-500">
+          Author: {author}
+        </footer>
       </div>
-    </div>
     </div>
   );
 };

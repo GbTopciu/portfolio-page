@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-slate-800">
       <BrowserRouter>
         <Nav />
         <Routes>

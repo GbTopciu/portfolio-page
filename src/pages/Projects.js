@@ -5,7 +5,7 @@ import CardsList from "../components/CardsList";
 const Home = () => {
   
   return (
-    <div className="flex justify-center">
+    <div>
       <CardsList />
     </div>
   );

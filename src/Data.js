@@ -2,18 +2,18 @@ import { v4 as uuidv4 } from "uuid";
 
 export const Data = [
   {
-    name: "Gabriel",
-    title:"Gabriel",
+    author: "Gabriel",
+    title:"Waves",
     description:
       "Waves is a music player created using React and SASS. It works similar to most music players",
     cover:
       "https://chillhop.com/wp-content/uploads/2022/01/6881c7456483ab8ea364152a594942a20669a058-1024x1024.jpg",
     id: uuidv4(),
     active: false,
-    link:"www.google.com",
+    link: 'www.google.com',
   },
   {
-    name: "Waves",
+    author: "Gabriel",
     title:"Gabriel",
     description:
       "Waves is a music player created using React and SASS. It works similar to most music players",
@@ -24,7 +24,7 @@ export const Data = [
     link:"www.google.com",
   },
   {
-    name: "Waves",
+    author: "Gabriel",
     title:"Gabriel",
     description:
       "Waves is a music player created using React and SASS. It works similar to most music players",
@@ -35,7 +35,7 @@ export const Data = [
     link:"www.google.com",
   },
   {
-    name: "Waves",
+    author: "Gabriel",
     title:"Gabriel",
     description:
       "Waves is a music player created using React and SASS. It works similar to most music players",
