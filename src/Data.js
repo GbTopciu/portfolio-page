@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 export const Data = [
   {
     author: "Gabriel",
-    title:"Waves",
+    title:"Cristina boasa",
     description:
       "Waves is a music player created using React and SASS. It works similar to most music players",
     cover:
