@@ -60,7 +60,7 @@ const Nav = () => {
           </div>
           <div className="md:hidden flex items-center">
             <button ref={menuRef} onClick={() => setShow(!show)}>
-              <MenuIcon className="w-6 h-6 text-white hover:text-blue-100 hover:border-2 border-blue-100" />
+              <MenuIcon className="w-6 h-6 text-white hover:text-blue-100 hover:border-2 hover:border-blue-100" />
             </button>
           </div>
         </div>
