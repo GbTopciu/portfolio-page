@@ -5,5 +5,8 @@ module.exports = {
   theme: {
     extend: {},
   },
+  colors: {
+    'pink' : '#C92C5F'
+  },
   plugins: [],
 }

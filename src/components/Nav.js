@@ -1,11 +1,10 @@
-import { React , useState, useRef, useEffect } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CogIcon } from "@heroicons/react/solid";
 import { MenuIcon } from "@heroicons/react/solid";
 import MobileNav from "./MobileNav";
 
 const Nav = () => {
-
   const [show, setShow] = useState(false);
 
   const menuRef = useRef();
@@ -13,14 +12,13 @@ const Nav = () => {
     const handler = (event) => {
       if (!menuRef.current.contains(event.target)) {
         setShow(false);
-      }  
+      }
     };
     document.addEventListener("mousedown", handler);
     return () => {
-    document.removeEventListener("mousedown", handler);
+      document.removeEventListener("mousedown", handler);
     };
   });
-
 
   return (
     <nav ref={menuRef}>
@@ -32,10 +30,15 @@ const Nav = () => {
               className="font-bold text-white py-5 px-1 hover:text-blue-100"
               to="/"
             >
-              KNOWLEDGE === POWER
+              <p>
+                <span>&lt;</span>
+                <span className="text-pink-500">Hello</span>{" "}
+                <span className="text-lime-500">World</span>
+                <span>/&gt;</span>
+              </p>
             </Link>
           </div>
-          <div  className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1">
             <Link
               className="font-semibold text-white py-5 px-3 hover:text-blue-100"
               to="/"
@@ -56,13 +59,13 @@ const Nav = () => {
             </Link>
           </div>
           <div className="md:hidden flex items-center">
-            <button ref={menuRef} onClick={() => setShow(!show)} >
-              <MenuIcon  className="w-6 h-6 text-white hover:text-blue-100" />
+            <button ref={menuRef} onClick={() => setShow(!show)}>
+              <MenuIcon className="w-6 h-6 text-white hover:text-blue-100 hover:border-2 border-blue-100" />
             </button>
           </div>
         </div>
       </div>
-      {show && <MobileNav show={show}setShow={setShow} />}
+      {show && <MobileNav show={show} setShow={setShow} />}
     </nav>
   );
 };
