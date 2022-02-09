@@ -1,6 +1,5 @@
 import { React, useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { CogIcon } from "@heroicons/react/solid";
 import { MenuIcon } from "@heroicons/react/solid";
 import MobileNav from "./MobileNav";
 
@@ -25,7 +24,7 @@ const Nav = () => {
       <div className="px-8 mx-auto">
         <div className="flex justify-between">
           <div className="flex items-center space-x-1">
-            <CogIcon className="text-white w-6 h-6 " />
+          
             <Link
               className="font-bold text-white py-5 px-1 hover:text-blue-100"
               to="/"
