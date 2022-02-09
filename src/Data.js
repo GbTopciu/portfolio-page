@@ -16,11 +16,11 @@ export const Data = [
     author: "Gabriel",
     title:"Diary",
     description:
-      "Diary is a To-Do List aimed to help the user throughout the day",
+      "Diary is a To-Do List aimed to help the user throughout the day. Still work in progress so no links for now :)",
     cover:
       "https://i.imgur.com/ZOeKzTy.png",
     id: uuidv4(),
     active: false,
-    link:"www.google.com",
+    link:"",
   },
 ];
