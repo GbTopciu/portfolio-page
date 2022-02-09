@@ -5,7 +5,7 @@ export const Data = [
     author: "Gabriel",
     title:"Waves",
     description:
-      "Waves is a music player created using React and SASS. The user can listen to a specific song from a small collection of Chillhop songs.",
+      "Waves is a lovely Music Player that contains an impressive collection of Chillhop songs. Do you want to start a coding session? We've got you covered, so hop on and select a track. This project was completed using React and SASS.",
     cover:
       "https://i.imgur.com/MxVH4qT.png",
     id: uuidv4(),

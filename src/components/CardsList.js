@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const CardsList = () => {
   return (
-    <>
+    <div>
       {Data.map((dta) => (
         <Card
           key={dta.id}
@@ -13,9 +13,10 @@ const CardsList = () => {
           description={dta.description}
           title={dta.title}
           date={dta.date}
+          link={dta.link}
         />
       ))}
-    </>
+    </div>
   );
 };
 

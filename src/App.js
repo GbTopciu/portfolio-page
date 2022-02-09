@@ -6,7 +6,6 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
-
 function App() {
   return (
     <div className="bg-slate-800">
