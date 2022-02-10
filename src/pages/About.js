@@ -2,9 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
+    <div class="bg-slate-800">
     <div className="h-screen">
-      <div className="flex flex-col justify-center items-center h-1/2">
-        <h2 className="text-pink-500 text-5xl mb-5">THE JOURNEY</h2>
+      <div className="flex flex-col justify-center items-center h-1/2 pb-32">
+        <h2 className="text-pink-500 text-5xl">THE JOURNEY</h2>
         <p className="text-lime-500 text-xl text-center ">
           I Know React. In Fact I Wrote A Bunch Of Websites Using It
         </p>
@@ -26,6 +27,7 @@ const About = () => {
           </h3>
         </section>
       </div>
+    </div>
     </div>
   );
 };
