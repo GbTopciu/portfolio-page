@@ -26,32 +26,32 @@ const Nav = () => {
           <div className="flex items-center space-x-1">
           
             <Link
-              className="font-bold text-white py-5 px-1 hover:text-blue-100"
+              className="font-bold text-slate-500 py-5 px-1"
               to="/"
             >
               <p>
                 <span>&lt;</span>
-                <span className="text-pink-500">Hello</span>{" "}
-                <span className="text-lime-500">World</span>
+                <span className="text-slate-500">Hello</span>{" "}
+                <span className="text-slate-900">World</span>
                 <span>/&gt;</span>
               </p>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-1">
             <Link
-              className="font-semibold text-white py-5 px-3 hover:text-blue-100"
+              className="font-semibold text-slate-500 py-5 px-3 hover:text-slate-900"
               to="/"
             >
               Projects
             </Link>
             <Link
-              className="font-semibold text-white py-5 px-3 hover:text-blue-100"
+              className="font-semibold text-slate-500 py-5 px-3 hover:text-slate-900"
               to="/about"
             >
               About
             </Link>
             <Link
-              className="font-semibold text-white py-5 px-3 hover:text-blue-100"
+              className="font-semibold text-slate-500 py-5 px-3 hover:text-slate-900"
               to="/contact"
             >
               Contact
@@ -59,7 +59,7 @@ const Nav = () => {
           </div>
           <div className="md:hidden flex items-center">
             <button ref={menuRef} onClick={() => setShow(!show)}>
-              <MenuIcon className="w-6 h-6 text-white hover:text-blue-100 focus:border-transparent focus:border-blue-100" />
+              <MenuIcon className="w-6 h-6 text-slate-500 hover:text-slate-900" />
             </button>
           </div>
         </div>

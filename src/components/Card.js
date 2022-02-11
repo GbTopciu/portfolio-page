@@ -15,12 +15,12 @@ const Card = ({ author, description, cover, title, link }) => {
           <h2 className="text-2xl font-extrabold mb-5">{title}</h2>
           <p className="text-lg text-center">{description}</p>
           <a href={link} target="_blank" rel="noreferrer">
-            <button className="bg-pink-500 hover:bg-lime-500 text-blue-50 rounded-lg py-2 px-4 mt-5">
+            <button className="bg-slate-500 hover:bg-slate-900 text-blue-50 rounded-lg py-2 px-4 mt-5">
               Get Started
             </button>
           </a>
         </div>
-        <footer className="bg-gray-100 rounded-b-lg text-right py-3 px-8 text-xs text-gray-500">
+        <footer className="bg-gray-100 rounded-b-lg text-right py-3 px-8 text-xs text-slate-500">
           Author: {author}
         </footer>
       </div>
