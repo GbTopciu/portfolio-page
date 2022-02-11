@@ -22,88 +22,76 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl h-full p-8">
-      <form onSubmit={handleSubmit(handleMessageForm)} className="h-screen ">
-        {/* Name Area */}
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3 md:h-1/3">
-            <label className="block text-slate-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-              Name
-            </label>
-          </div>
-          <div className="md:w-2/3">
-            <input
-              className="bg-slate-200 appearance-none border-2 border-slate-500 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-slate-900"
-              name="name"
-              {...register("name", registerOptions.name)}
-              type="text"
-              placeholder="Full Name"
-            />
-            <small className="text-red-500">
-              {errors?.name && errors.name.message}
-            </small>
-          </div>
-        </div>
-        {/* Name Area */}
+    <div className="flex justify-center items-center h-screen w-full">
+    <form className="flex flex-col justify-center w-96 md:w-2/3 lg:w-1/3 h-3/4 p-4 shadow-2xl " onSubmit={handleSubmit(handleMessageForm)}>
+    <h2 className="flex justify-center mb-10 text-slate-900 font-bold text-lg">Contact Form</h2>
+      {/* Name Area */}
+      <div className="mb-6">
+        <label className="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">
+          Name
+        </label>
+        <input
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          name="name"
+          {...register("name", registerOptions.name)}
+          type="text"
+          placeholder="Full Name"
+        />
+        <small className="text-red-500">
+          {errors?.name && errors.name.message}
+        </small>
+      </div>
 
-        {/* Email Area */}
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3">
-            <label className="block text-slate-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-              Email
-            </label>
-          </div>
-          <div className="md:w-2/3">
-            <input
-              className="bg-slate-200 appearance-none border-2 border-slate-500 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-slate-900"
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              {...register("email", registerOptions.email)}
-            />
-            <small className="text-red-500">
-              {errors?.email && errors.email.message}
-            </small>
-          </div>
-        </div>
-        {/* Email Area */}
+      {/* Name Area */}
 
-        {/* Message Area */}
-        <div className="md:flex md:items-center mb-6">
-          <div className="md:w-1/3">
-            <label className="block text-slate-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-              Message
-            </label>
-          </div>
-          <div className="md:w-2/3">
-            <textarea
-              className="bg-slate-200 appearance-none border-2 border-slate-500 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-slate-900"
-              name="msg"
-              {...register("msg", registerOptions.message)}
-              type="text"
-              placeholder="Your Message"
-            ></textarea>
-            <small className="text-red-500">
-              {errors?.msg && errors.msg.message}
-            </small>
-          </div>
-        </div>
-        {/* Message Area */}
+      {/* Email Area */}
+      <div className="mb-6">
+        <label className="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">
+          Email
+        </label>
+        <input
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          name="email"
+          type="email"
+          placeholder="Email Address"
+          {...register("email", registerOptions.email)}
+        />
+        <small className="text-red-500">
+          {errors?.email && errors.email.message}
+        </small>
+      </div>
+      {/* Email Area */}
 
-        {/* Button */}
-        <div className="md:flex md:items-center">
-          <div className="md:w-1/3"></div>
-          <div className="md:w-2/3 items-center">
-            <button
-              className="shadow bg-slate-500 hover:bg-slate-900 border-2 border-slate-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded focus:border-slate-900"
-              type="submit"
-            >
-              Message
-            </button>
-          </div>
-        </div>
-        {/* Button */}
-      </form>
+      {/* Message Area */}
+      <div className="mb-10">
+        <label className="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">
+          Message
+        </label>
+
+        <textarea
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-3/4 md:h-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          name="msg"
+          {...register("msg", registerOptions.message)}
+          type="text"
+          placeholder="Your Message"
+        ></textarea>
+        <small className="text-red-500">
+          {errors?.msg && errors.msg.message}
+        </small>
+      </div>
+      {/* Message Area */}
+
+      {/* Button */}
+      <div>
+      <button
+        className="text-white bg-slate-500 hover:bg-slate-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="submit"
+      >
+        Message
+      </button>
+      </div>
+      {/* Button */}
+    </form>
     </div>
   );
 };
