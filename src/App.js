@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
+    <div className="bg-slate-100">
       <BrowserRouter>
         <Nav />
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

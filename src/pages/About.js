@@ -4,13 +4,13 @@ const About = () => {
   return (
     <div className="md:flex flex-col h-screen">
       <div className="flex flex-col justify-center items-center h-1/2 p-10">
-        <h2 className="text-slate-500 text-7xl">THE JOURNEY</h2>
+        <h2 className="text-slate-500 text-6xl">THE JOURNEY</h2>
         <p className="text-slate-900 text-2xl text-center">
           I Know React. In Fact I Wrote A Bunch Of Websites Using It
         </p>
       </div>
-      <div className="text-xl text-center h-1/2 bg-slate-100 ">
-        <section className= "bg-slate-100 p-10 text-2xl">
+      <div className="text-xl text-center h-1/2 bg-slate-200">
+        <section className= "bg-slate-200 p-10 text-2xl">
           It all began when I was required to create my first Excel report on a
           daily basis. This is getting boring, I thought... There must be a
           better way. Then I taught myself to code with VBA. Not only did I end

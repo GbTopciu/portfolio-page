@@ -20,7 +20,7 @@ const Card = ({ author, description, cover, title, link }) => {
             </button>
           </a>
         </div>
-        <footer className="bg-gray-100 rounded-b-lg text-right py-3 px-8 text-xs text-slate-500">
+        <footer className="bg-slate-100 rounded-b-lg text-right py-3 px-8 text-xs text-slate-500 shadow-lg">
           Author: {author}
         </footer>
       </div>
