@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div className="md:flex flex-col h-screen">
       <div className="flex flex-col justify-center items-center h-1/2 p-10">
-        <h2 className="text-slate-500 text-6xl">THE JOURNEY</h2>
+        <h2 className="text-slate-500 text-5xl md:6xl mb-2">THE JOURNEY</h2>
         <p className="text-slate-900 text-2xl text-center">
-          I Know React. In Fact I Wrote A Bunch Of Websites Using It
+          I know React. In fact I wrote a bunch of websites using it
         </p>
       </div>
       <div className="text-xl text-center h-1/2 bg-slate-200">

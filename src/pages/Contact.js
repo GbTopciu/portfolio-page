@@ -3,11 +3,33 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+
+  // React-Hook-Form
   const form = useRef();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const registerOptions = {
+    name: { required: "Name is required" },
+    email: { required: "Email is required",
+    pattern: {
+      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+      message: "Invalid email address" }},
+    message: {
+      required: "Message is required",
+      minLength: {
+        value: 8,
+        message: "Message must contain at least 8 characters",
+      },
+    },
+  };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
 
+  // Email Js
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_sln6yzt",
@@ -23,33 +45,15 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+    reset();
   };
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const handleError = (errors) => {};
-
-  const registerOptions = {
-    name: { required: "Name is required" },
-    email: { required: "Email is required" },
-    message: {
-      required: "Message is required",
-      minLength: {
-        value: 8,
-        message: "Message must contain at least 8 characters",
-      },
-    },
-  };
 
   return (
     <div className="flex justify-center items-center h-screen w-full">
       <form
         className="flex flex-col justify-center w-96 md:w-2/3 lg:w-1/3 h-3/4 p-4 shadow-2xl "
-        onSubmit={handleSubmit(handleError, sendEmail)}
+        onSubmit={handleSubmit(sendEmail)}
         ref={form}
       >
         <h2 className="flex justify-center mb-10 text-slate-900 font-bold text-lg">
