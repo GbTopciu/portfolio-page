@@ -14,13 +14,13 @@ export const Data = [
   },
   {
     author: "Gabriel",
-    title:"Diary",
+    title:"Ping-Pong",
     description:
-      "Diary is a To-Do List aimed to help the user throughout the day. Still work in progress so no links for now :)",
+      "Ping-Pong is a basic score-keeper created using Javascript and Bulma",
     cover:
-      "https://i.imgur.com/ZOeKzTy.png",
+      "https://i.imgur.com/WNdM8yr.png",
     id: uuidv4(),
     active: false,
-    link:"",
+    link:"https://wizardly-sinoussi-d41571.netlify.app/",
   },
 ];
