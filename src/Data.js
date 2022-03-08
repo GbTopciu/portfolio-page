@@ -23,4 +23,15 @@ export const Data = [
     active: false,
     link:"https://wizardly-sinoussi-d41571.netlify.app/",
   },
+  {
+    author: "Gabriel",
+    title:"TV Shows API",
+    description:
+      "Simple TV Shows API created using Javascript and Axios",
+    cover:
+      "https://i.imgur.com/etbJixG.png",
+    id: uuidv4(),
+    active: false,
+    link:"https://xenodochial-khorana-781515.netlify.app/",
+  },
 ];
